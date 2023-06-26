@@ -1,0 +1,87 @@
+.marginBottom8 {
+  margin-bottom: 8px;
+}
+.marginBottom16 {
+  margin-bottom: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+}
+body {
+  background-color: #ffffffdc;
+  color: #b1dddc;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding-bottom: 24px;
+}
+header .profile_avatar {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.profile_bio {
+  text-align: center;
+}
+.profile_bio_name {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.profile_bio_subtitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.profile_bio_description {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #b1dddc;
+}
+.bio_list {
+  margin-top: 24px;
+}
+.bio_list_iten a {
+  text-decoration: none;
+  display: block;
+  background-color: #fcd4db;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #fcd4db;
+  transition: all ease 0.5s;
+  text-align: center;
+  justify-content: center;
+}
+.bio_list_iten a:hover {
+  color: #fcd4db;
+  background-color: transparent;
+}

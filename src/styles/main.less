@@ -1,0 +1,106 @@
+@import "maps.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)";
+
+.marginBottom8 {
+    margin-bottom: 8px;
+}
+
+.marginBottom16 {
+    margin-bottom: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointTablet {
+        max-width: 80%;
+    }
+
+    @media @breakpointMobile {
+        max-width: 70%;
+    }
+}
+
+header {
+    padding-bottom: 24px;
+
+    .profile_avatar {
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.profile_bio {
+    text-align: center;
+
+    &_name {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    &_subtitle {
+        font-size: 16px;
+        .marginBottom8();
+    }
+
+    &_description {
+        font-size: 14px;
+        opacity: .7;
+        .marginBottom16();
+        text-decoration: none;
+        color: #colors[textColor];
+    }
+}
+
+.bio_list {
+    margin-top: 24px;
+
+    &_iten {
+        a {
+            text-decoration: none;
+            display: block;
+            background-color: #colors[buttonColor];
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #colors[buttonColor];
+            transition: all ease .5s;
+            text-align: center;
+            justify-content: center;
+
+            &:hover {
+                color: #colors[buttonColor];
+                background-color: transparent;
+            }
+        }
+    }
+}
